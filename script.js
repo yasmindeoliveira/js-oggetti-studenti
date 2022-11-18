@@ -118,6 +118,20 @@ if (genere == "maschio") {
         }
     
     );
+} else {
+
+    tokyoJujutsuHigh.push(
+
+        utente = {
+            name: nameUtente,
+            surname: surnameUtente,
+            age: ageUtente,
+            occupation: "Jujutsu Sorcer",
+            
+        }
+    
+    );
+
 };
 
 
