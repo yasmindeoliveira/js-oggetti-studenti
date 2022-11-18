@@ -1,52 +1,89 @@
 // 1. Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
+
 let yuji ={
-    name: "Yuji Itadori",
+    name: "Yuji",
+    surname: "Itadori",
     age: 15,
     occupation: "Jujutsu Sorcer"
 }
+
+
+// 2. Stampare a schermo attraverso un ciclo for (o eventualmente con for-in) tutte le proprietà dell'oggetto.
+
+for (let key in yuji){
+
+    console.log(key);
+    console.log(yuji[key]);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //3. Creare un array di oggetti di studenti (ossìa oggetti con le proprietà sopra descritte).
 
 let tokyoJujutsuHigh = [
 
-    yuji ={
+    {
         name: "Yuji Itadori",
         age: 15,
         occupation: "Jujutsu Sorcer"
     },
     
-    megumi ={
+    {
         name: "Megumi Fushiguro",
         age: 15,
         occupation: "Jujutsu Sorcer"
     },
     
-    nobara ={
+    {
         name: "Nobara Kugisaki",
         age: 16,
         occupation: "Jujutsu Sorcer"
     },
     
-    maki ={
+    {
         name: "Maki Zenin",
         age: 16,
         occupation: "Jujutsu Sorcer"
     },
     
-    toge ={
+    {
         name: "Toge Inumaki",
         age: 17,
         occupation: "Jujutsu Sorcer"
     },
     
-    panda ={
+    {
         name: "Panda",
         age: 17,
         occupation: "Jujutsu Sorcer"
     },
     
-    yuta ={
+    {
         name: "Yuta Okkotsu",
         age: 17,
         occupation: "Jujutsu Sorcer"
@@ -54,13 +91,7 @@ let tokyoJujutsuHigh = [
 
 ];
 
-// 2. Stampare a schermo attraverso un ciclo for (o eventualmente con for-in) tutte le proprietà dell'oggetto.
 
-for (let chiave in yuji){
-
-    console.log(chiave);
-    console.log(yuji[chiave]);
-}
 
 //4. Ciclare su tutti gli studenti e stampare per ognuno di essi: nome e cognome.
 
@@ -108,7 +139,21 @@ function printYuji (yuji){
 
 function printTokyoJujutsuHigh (tokyoJujutsuHigh) {
 
-    for (let i=0; i<tokyoJujutsuHigh.length; i++) {
+    for (let element of tokyoJujutsuHigh){
+
+        /* console.log(element); */
+
+        for (let key in element){
+
+            console.log(key);
+            console.log(element[key]);
+        }
+
+        
+    }
+
+
+    /* for (let i=0; i<tokyoJujutsuHigh.length; i++) {
 
         console.log(
             `
@@ -121,6 +166,6 @@ function printTokyoJujutsuHigh (tokyoJujutsuHigh) {
             -------------------------------------------------
             `
         )
-    };
+    }; */
     
 }
